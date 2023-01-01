@@ -28,15 +28,12 @@ vim.opt.wrap = false -- No Wrap lines
 vim.opt.backspace = { 'start', 'eol', 'indent' }
 vim.opt.path:append { '**' } -- Finding files - Search down into subfolders
 vim.opt.wildignore:append { '*node_modules*' }
+
 vim.opt.termguicolors = true
 vim.opt.cursorline = true
 
-vim.cmd('colorscheme iceberg')
-vim.cmd('set pumblend=30')
-
--- Undercurl
-vim.cmd([[let &t_Cs = "\e[4:3m"]])
-vim.cmd([[let &t_Ce = "\e[4:0m"]])
+vim.cmd('colorscheme solarized8')
+vim.cmd('set pumblend=15')
 
 -- Turn off paste mode when leaving insert
 vim.api.nvim_create_autocmd("InsertLeave", {

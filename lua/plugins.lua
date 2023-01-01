@@ -19,13 +19,16 @@ packer.startup(function(use)
   use 'williamboman/mason.nvim'
   use 'williamboman/mason-lspconfig.nvim'
 
+  use {'nvim-tree/nvim-tree.lua'}
+
   use 'sheerun/vim-polyglot'
   use 'kyazdani42/nvim-web-devicons' -- File icons
-  -- use 'nvim-telescope/telescope.nvim'
   use 'windwp/nvim-autopairs'
   use 'norcalli/nvim-colorizer.lua'
   use 'akinsho/nvim-bufferline.lua'
 
-  use 'cocopon/iceberg.vim'
+  use 'lifepillar/vim-solarized8'
+
+  use 'kdheepak/tabline.nvim'
 
 end)
